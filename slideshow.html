@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>feli</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Inter, "Segoe UI", Roboto, system-ui;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  /* ===== GANTI NAMA FILE BACKGROUND DI SINI ===== */
+  background: url('gunung.png') no-repeat center center;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 0;
+}
+
+.slideshow {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  height: 460px;
+  overflow: hidden;
+  border-radius: 20px;
+  backdrop-filter: blur(6px);
+  background: rgba(255,255,255,0.15);
+  z-index: 1;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.slide.active { opacity: 1; }
+
+h1 { margin:0 0 12px 0; font-size:36px; }
+p { font-size:18px; max-width:600px; }
+
+.controls {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.3);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover { background: rgba(255,255,255,0.5); }
+
+.slide.full-photo img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:20px;
+}
+
+.music-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.3);
+  color: #fff;
+  cursor: pointer;
+}
+
+.music-btn:hover { background: rgba(255,255,255,0.6); }
+
+</style>
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<div class="slideshow">
+
+<!-- Slide 0: Pesan awal -->
+<div class="slide active">
+      <h1>HALLO BOCIL</h1>
+      <b>**JANGAN LUPA PLAY MUSIK DI POJOK KANAN ATAS**</b><br>
+      <p>Holaaa bocil akhirnya ulang tahun... tambah tuwek ae rek... <br>
+         Doa dewe yo kan sekarang udah tua...<br>
+      Heheheee Candaaa </p>
+       <p><b>PASTIKAN BACA SAMPAI AKHIR BARU KOMEN!!!...</b></p>
+    </div>
+
+<!-- Slide 1: Foto feli + animasi 🥳 -->
+<div class="slide">
+      <img src="feli.png" alt="Foto feli" style="width:200px; height:auto; border-radius:50%; margin-bottom:15px; box-shadow:0 4px 12px rgba(0,0,0,0.5);">
+      <h1 class="typing">Selamat Ulang Tahun Bocil</h1>
+      <p>Semoga yang disemogakan dapat terkabul...AAMIIN</p>
+    </div>
+
+<!-- Slide 2: Balon Bahagia -->
+<div class="slide">
+      <h1>Dear Feli</h1>
+      <p>Halo aku Alfin izin ambil foto buat ini<br>
+        Aku cuman mau ngucapin HBD ke orang yang sudah buat aku jatuh cinta lagi, walaupun tak bisa aku milikin</p>
+    </div>
+
+<!-- Slide 3: Harapan Indah -->
+<div class="slide">
+      <h1>Plot twist</h1>
+      <p>Plot twistnya kita dipertemukan secara tidak sengaja dan dipisahkan dengan keadaan.</p>
+    </div>
+
+<!-- Slide 4: Selamat Merayakan + animasi 😑 -->
+<div class="slide">
+      <h1>HHMMMMMM</h1>
+      <p>Btw felll kata-kataku di slide sebelum dan sesudah iki mintol sedikit di maklumi
+        karna sejujurnya aku geli, jujur alay pol, aku nulis iki ben gk canggung ae. <br>trs aku mau bilang <BR><br>
+      Jujur yaa aku kangen sama kmu<br> tapi aku gamau ganggu dan buat kamu risih.<br>
+    Makanya aku sekalian cerita di sini... Izinnnnn</p>
+    </div>
+
+<!-- Slide 5: Pesan Spesial + animasi 🤬 -->
+<div class="slide">
+  <h1>ANUU</h1>
+ <p> Felll nek motoran awkmu seng genah jir<br>
+  mosok yo motoran koyok ape ngejak pindah alam <br>
+  aku sekaline mok gonceng langsung trauma jir. <br>
+  Nyalib oleh tpi dipikir lagi kids <br>
+  ojo mok trabas kabeh sampe diduding rokok mbe uwong <br>
+Ojo ngunu plis emanono awkmu saale tanggal apes gaonk nk kalender. <br>
+<b>Jaga diri baik-baik ya fell</b>
+  </p>
+</div>
+
+<!-- Slide 6: Pesan Spesial + animasi 🤬 -->
+<div class="slide">
+  <h1>ALAY DIKIT</h1>
+ <p>Sebenenya aku pengen cerita lagi kyk dulu, dongengin kamu sampe ketiduran<br>
+  tpi gimana lagi, nasi udah jadi bubur.<br> <br>
+  Dan felll.... aku minta maaf karna aku dulu terlalu egois.<br>
+    Aku selalu cerita masalalu dan terlalu friendly disaat lagi deket sama kamu. <br>
+    Dan bodohnya aku waktu itu selalu berfikiran <br> "selagi aku gaada hubungan aku bebas". <br>
+<b>AKU BENER-BENER MINTA MAAF</b>
+  </p>
+</div>
+
+<!-- Slide 7: Pesan Spesial + animasi 🤬 -->
+<div class="slide">
+  <h1>GAMSAHAMNIDA</h1>
+  <p>Makasih juga fell karna kamu aku belajar sesuatu tentang hubungan, jujur selama punya hubungan gapernah 
+    se excited ini walaupun sama mantan pacar, tau sendirikan ceritaku kek apa. Apalagi kita sefrekuensi dan sehobii. 
+    pokoknya banyak experience baruku nde kamu <br>
+    intinya... kacamata mamamudalah... canda.<br>
+    Intinya aku bener-bener makasih banyak karna udah sempet deket.<br><br>
+    <b>so i will always be happy if i see you happy</b>
+  </p>
+</div>
+
+
+<!-- Slide 8: Pesan Spesial + animasi 🤬 -->
+<div class="slide">
+  <h1>PESAN</h1>
+  <p>Btw Congratulations karna udh dapet goldentiket<br><br>
+    Jangan lupa bahagia yaa, Nikmati masa SMA mu dan janga sia-siakan kesempatanmu 
+    karna di masa SMA itu masa" paling seru menurutku <br>
+    pokoknya jangan di sia-sia kan, banyak cari temen apalagi yang sehobi pasti banyak.
+    tpi jangan sampe salah pergaulan. <br>
+  </p>
+</div>
+
+<!-- Slide 9: Pesan Spesial + animasi 🤬 -->
+<div class="slide">
+  <h1>FOR YOU</h1>
+  <p>Semoga kamu dapet seseorang yang bisa buat kamu bahagia dan jauh-jauh lebih baik dari semua orang yang pernah buat kamu sakit.<br><br>
+    <b>...semoga pilihanmu yang sekarang menjadi pilihan yang terbaik...</b>
+  </p>
+</div>
+
+    <!-- Slide 10 -->
+    <div class="slide" id="slide10">
+      <h1 id="line1"></h1>
+      <h1 id="line2"></h1>
+    </div>
+
+    <!-- Slide 11 -->
+    <div class="slide full-photo">
+      <img src="alfin.jpeg" alt="Foto Alfin">
+    </div>
+
+    <!-- Navigasi -->
+    <div class="controls">
+      <button class="btn" id="prevBtn">⬅ Prev</button>
+      <button class="btn" id="nextBtn">Next ➡</button>
+    </div>
+  </div>
+
+  <!-- Musik -->
+  <audio id="bg-music" loop>
+    <source src="feli.mp3" type="audio/mpeg">
+    Browser kamu tidak mendukung audio tag.
+  </audio>
+  <button class="music-btn" id="musicBtn">🔊 Play Musik</button>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let current = 0;
+
+    function typeText(element, text, speed = 100) {
+      return new Promise(resolve => {
+        element.textContent = '';
+        let i = 0;
+        const interval = setInterval(() => {
+          element.textContent += text[i];
+          i++;
+          if (i === text.length) {
+            clearInterval(interval);
+            resolve();
+          }
+        }, speed);
+      });
+    }
+
+    function deleteText(element, speed = 100) {
+      return new Promise(resolve => {
+        let text = element.textContent;
+        let i = text.length;
+        const interval = setInterval(() => {
+          i--;
+          element.textContent = text.substring(0, i);
+          if (i <= 0) {
+            clearInterval(interval);
+            resolve();
+          }
+        }, speed);
+      });
+    }
+
+    // Fungsi emoji
+    function addEmoji(emoji) {
+      const el = document.createElement('div');
+      el.classList.add('emoji');
+      el.textContent = emoji;
+      el.style.left = Math.random() * 90 + 'vw';
+      el.style.bottom = '-50px';
+      el.style.fontSize = (20 + Math.random() * 30) + 'px';
+      el.style.animation = `floatUp ${3 + Math.random() * 3}s linear forwards`;
+      document.body.appendChild(el);
+      setTimeout(() => el.remove(), 6000);
+    }
+
+    function showSlide(index) {
+      slides.forEach((s, i) => s.classList.toggle('active', i === index));
+
+      // Tombol navigasi
+      prevBtn.style.display = (index === 0) ? 'none' : 'inline-block';
+      nextBtn.style.display = 'inline-block';
+
+
+      // Animasi slide 10
+      if (index === 10) {
+        prevBtn.style.display = 'none';
+        nextBtn.style.display = 'none';
+        const line1 = document.getElementById('line1');
+        const line2 = document.getElementById('line2');
+        line1.textContent = '';
+        line2.textContent = '';
+
+        typeText(line1, "SEMOGA HARIMU MENYENANGKAN", 100).then(() => {
+          setTimeout(() => {
+            deleteText(line1, 100).then(() => {
+              setTimeout(() => {
+                typeText(line2, "HAPPY BIRTHDAY FELI BOCIL", 100).then(() => {
+                  setTimeout(() => {
+                    current = 11;
+                    showSlide(current);
+                  }, 3000);
+                });
+              }, 500);
+            });
+          }, 2000);
+        });
+      }
+    }
+
+    // Tombol navigasi
+    prevBtn.addEventListener('click', () => {
+      current = (current > 0) ? current - 1 : 0;
+      showSlide(current);
+    });
+
+    nextBtn.addEventListener('click', () => {
+      // Jika slide terakhir, kembali ke slide 0
+      current = (current < slides.length -1) ? current + 1 : 0;
+      showSlide(current);
+    });
+
+    // Musik
+    const musicBtn = document.getElementById('musicBtn');
+    const bgMusic = document.getElementById('bg-music');
+    let isPlaying = false;
+    musicBtn.addEventListener('click', () => {
+      if (!isPlaying) {
+        bgMusic.play();
+        musicBtn.textContent = '🔊 Pause Musik';
+      } else {
+        bgMusic.pause();
+        musicBtn.textContent = '🔊 Play Musik';
+      }
+      isPlaying = !isPlaying;
+    });
+
+    // Tampilkan slide awal
+    showSlide(current);
+  </script>
+</body>
+
+</html>
